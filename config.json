@@ -1,0 +1,52 @@
+{
+  "serial": {
+    "port": "COM4",
+    "baudrate": 9600,
+    "bytesize": 8,
+    "parity": "N",
+    "stopbits": 1.0,
+    "timeout": 1.0
+  },
+  "api": {
+    "url": "",
+    "timeout": 30,
+    "retry_count": 3,
+    "retry_delay": 5
+  },
+  "fractions": [
+    "Щебень 5-20",
+    "Щебень 20-40",
+    "Щебень 40-70",
+    "Песок",
+    "ПГС",
+    "Отсев"
+  ],
+  "cameras": [
+    {
+      "name": "Камера 1 (въезд)",
+      "url": "https://stream.kt.kg:5443/live/camera25.m3u8",
+      "enabled": true
+    },
+    {
+      "name": "Камера 2 (весы)",
+      "url": "https://stream.kt.kg:5443/live/camera16.m3u8",
+      "enabled": true
+    },
+    {
+      "name": "Камера 3 (выезд)",
+      "url": "https://stream.kt.kg:5443/live/camera12.m3u8",
+      "enabled": true
+    },
+    {
+      "name": "Камера 4 (общий)",
+      "url": "https://stream.kt.kg:5443/live/camera19.m3u8",
+      "enabled": true
+    }
+  ],
+  "weight_stable_count": 5,
+  "weight_stable_threshold": 10.0,
+  "db_path": "weighings.db",
+  "weight_pattern": "[+-]?\\s*(\\d+\\.?\\d*)\\s*(?:kg|кг)?",
+  "capture_on_tara": true,
+  "capture_on_brutto": true
+}

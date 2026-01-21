@@ -1,0 +1,284 @@
+2026-01-19 17:09:20 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 17:09:20 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 17:09:20 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 17:09:20 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 17:09:20 | INFO     | TyanShanWeight.config | Файл конфигурации не найден. Создаем с значениями по умолчанию.
+2026-01-19 17:09:20 | INFO     | TyanShanWeight.config | Конфигурация сохранена в C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 17:09:20 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 17:09:20 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 17:09:20 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 17:09:20 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM1: could not open port 'COM1': FileNotFoundError(2, 'Не удается найти указанный файл.', None, 2)
+2026-01-19 17:09:21 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-19 17:09:21 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 17:09:37 | INFO     | TyanShanWeight.config | Конфигурация сохранена в C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 17:09:37 | INFO     | TyanShanWeight.settings_dialog | Настройки сохранены
+2026-01-19 17:09:37 | INFO     | TyanShanWeight.weighing_manager | Конфигурация обновлена
+2026-01-19 17:10:52 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-19 17:10:52 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-19 17:10:52 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-19 17:10:52 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-19 17:12:31 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 17:12:31 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 17:12:31 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 17:12:31 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 17:12:31 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 17:12:31 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 17:12:32 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 17:12:32 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 17:12:32 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-19 17:12:32 | INFO     | TyanShanWeight.scale_reader | Подключено к COM3 @ 9600
+2026-01-19 17:12:32 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 17:13:48 | INFO     | TyanShanWeight.config | Конфигурация сохранена в C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 17:13:48 | INFO     | TyanShanWeight.settings_dialog | Настройки сохранены
+2026-01-19 17:13:48 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 17:13:48 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 17:13:48 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 17:13:48 | INFO     | TyanShanWeight.scale_reader | Подключено к COM3 @ 9600
+2026-01-19 17:13:48 | INFO     | TyanShanWeight.weighing_manager | Конфигурация обновлена
+2026-01-19 17:16:00 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 17:16:00 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 17:16:00 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 17:16:00 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 17:16:00 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 17:16:01 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 17:16:01 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 17:16:01 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 17:16:01 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-19 17:16:01 | INFO     | TyanShanWeight.scale_reader | Подключено к COM3 @ 9600
+2026-01-19 17:16:01 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 17:24:16 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-19 17:24:16 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-19 17:24:16 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 17:24:16 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-19 17:24:16 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 17:24:16 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-19 17:24:24 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 17:24:24 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 17:24:24 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 17:24:24 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 17:24:24 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 17:24:24 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 17:24:24 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 17:24:24 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 17:24:24 | INFO     | TyanShanWeight.scale_reader | Подключено к COM3 @ 9600
+2026-01-19 17:24:24 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-19 17:24:24 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 17:25:26 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-19 17:25:26 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-19 17:25:26 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 17:25:26 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-19 17:25:26 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 17:25:26 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-19 17:25:59 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 17:25:59 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 17:25:59 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 17:25:59 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 17:25:59 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 17:25:59 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 17:25:59 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 17:25:59 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 17:25:59 | INFO     | TyanShanWeight.scale_reader | Подключено к COM3 @ 9600
+2026-01-19 17:25:59 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-19 17:25:59 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 17:27:41 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-19 17:27:41 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-19 17:27:41 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 17:27:41 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-19 17:27:41 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 17:27:41 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-19 17:27:45 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 17:27:45 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 17:27:45 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 17:27:45 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 17:27:45 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 17:27:45 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 17:27:45 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 17:27:45 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 17:27:45 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-19 17:27:45 | INFO     | TyanShanWeight.scale_reader | Подключено к COM3 @ 9600
+2026-01-19 17:27:45 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 17:27:48 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 17:27:48 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 17:27:54 | INFO     | TyanShanWeight.scale_reader | Подключено к COM3 @ 9600
+2026-01-19 17:27:54 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 17:28:50 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 17:28:50 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 17:28:55 | INFO     | TyanShanWeight.scale_reader | Подключено к COM3 @ 9600
+2026-01-19 17:28:55 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 17:23:38 | ERROR    | TyanShanWeight.scale_reader | Ошибка чтения: ClearCommError failed (OSError(22, 'Неверная функция.', None, 1))
+2026-01-19 17:23:39 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 17:32:10 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-19 17:32:10 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-19 17:32:10 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 17:32:10 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-19 17:32:10 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 17:32:10 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-19 17:38:52 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 17:38:52 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 17:38:52 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 17:38:52 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 17:38:52 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 17:38:52 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 17:38:52 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 17:38:52 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 17:38:52 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM3: could not open port 'COM3': FileNotFoundError(2, 'Не удается найти указанный файл.', None, 2)
+2026-01-19 17:38:53 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-19 17:38:53 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 17:39:04 | INFO     | TyanShanWeight.config | Конфигурация сохранена в C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 17:39:04 | INFO     | TyanShanWeight.settings_dialog | Настройки сохранены
+2026-01-19 17:39:04 | INFO     | TyanShanWeight.weighing_manager | Конфигурация обновлена
+2026-01-19 17:39:08 | INFO     | TyanShanWeight.weighing_manager | Сброс взвешивания
+2026-01-19 17:39:11 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-19 17:39:11 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-19 17:39:11 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-19 17:39:11 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-19 17:39:16 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 17:39:16 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 17:39:16 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 17:39:16 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 17:39:16 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 17:39:16 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 17:39:17 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 17:39:17 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 17:39:17 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-19 17:39:17 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-19 17:39:17 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 17:56:00 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-19 17:56:00 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-19 17:56:00 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 17:56:00 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-19 17:56:00 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 17:56:00 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-19 18:07:37 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 18:07:37 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 18:07:37 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 18:07:37 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 18:07:37 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 18:07:37 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 18:07:37 | INFO     | TyanShanWeight.camera | Создана директория для изображений: images
+2026-01-19 18:07:37 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-19 18:07:37 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 18:07:37 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 18:07:37 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-19 18:07:37 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-19 18:07:37 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 18:07:58 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 18:07:59 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 18:08:04 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-19 18:08:04 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 18:09:20 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 18:09:20 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 18:09:25 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-19 18:09:25 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 18:11:05 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-19 18:11:05 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-19 18:11:05 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 18:11:05 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-19 18:11:05 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 18:11:05 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-19 18:21:42 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 18:21:42 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 18:21:42 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 18:21:42 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 18:21:42 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 18:21:42 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 18:21:42 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-19 18:21:42 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 18:21:42 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 18:21:42 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-19 18:23:05 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 18:23:05 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 18:23:05 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 18:23:05 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 18:23:05 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 18:23:05 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 18:23:05 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-19 18:23:05 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 18:23:05 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 18:23:05 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-19 18:23:06 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-19 18:23:06 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 18:29:55 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 18:29:56 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 18:30:01 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-19 18:30:01 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 18:35:09 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 18:35:10 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 18:35:15 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-19 18:35:15 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 18:41:13 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-19 18:41:13 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-19 18:41:13 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 18:41:13 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-19 18:41:14 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 18:41:14 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-19 18:41:17 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 18:41:17 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 18:41:17 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 18:41:17 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 18:41:17 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 18:41:17 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 18:41:17 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-19 18:41:17 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 18:41:17 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 18:41:17 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-19 18:41:17 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-19 18:41:17 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 18:51:34 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-19 18:51:34 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-19 18:51:34 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 18:51:34 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-19 18:51:34 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 18:51:34 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-19 18:51:37 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 18:51:37 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 18:51:37 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 18:51:37 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 18:51:37 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 18:51:37 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 18:51:37 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-19 18:51:37 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 18:51:37 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 18:51:37 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-19 18:51:37 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-19 18:51:37 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 19:31:15 | INFO     | TyanShanWeight.weighing_manager | Сброс взвешивания
+2026-01-19 19:31:30 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 19:31:30 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 19:31:35 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-19 19:31:35 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 19:33:40 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-19 19:33:40 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-19 19:33:40 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-19 19:33:40 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-19 19:33:40 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 19:33:40 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-19 19:36:21 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-19 19:36:21 | INFO     | TyanShanWeight       | ==================================================
+2026-01-19 19:36:21 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-19 19:36:21 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-19 19:36:21 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-19 19:36:21 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-19 19:36:21 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-19 19:36:21 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-19 19:36:21 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-19 19:36:21 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-19 19:36:21 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-19 19:36:21 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-19 20:56:41 | ERROR    | TyanShanWeight.scale_reader | Ошибка чтения: ClearCommError failed (OSError(22, 'Неверная функция.', None, 1))
+2026-01-19 20:56:41 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-19 20:57:39 | INFO     | TyanShanWeight.weighing_manager | Сброс взвешивания
+2026-01-20 11:24:59 | ERROR    | TyanShanWeight.scale_reader | Ошибка чтения: ClearCommError failed (OSError(22, 'Неверная функция.', None, 1))
+2026-01-20 11:24:59 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-20 12:51:32 | ERROR    | TyanShanWeight.scale_reader | Ошибка чтения: ClearCommError failed (OSError(22, 'Неверная функция.', None, 1))
+2026-01-20 12:51:32 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-20 15:07:08 | ERROR    | TyanShanWeight.scale_reader | Ошибка чтения: ClearCommError failed (OSError(22, 'Неверная функция.', None, 1))
+2026-01-20 15:07:08 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-20 16:14:16 | ERROR    | TyanShanWeight.scale_reader | Ошибка чтения: ClearCommError failed (OSError(22, 'Неверная функция.', None, 1))
+2026-01-20 16:14:16 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-20 16:24:40 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-20 16:24:40 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-20 16:24:40 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-20 16:24:40 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-20 16:24:40 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-20 16:24:40 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0

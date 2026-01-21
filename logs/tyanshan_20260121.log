@@ -1,0 +1,801 @@
+2026-01-21 15:32:20 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 15:32:20 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 15:32:20 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 15:32:20 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 15:32:20 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 15:32:20 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 15:32:20 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 15:32:20 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 15:32:20 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 15:32:20 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 15:32:20 | INFO     | TyanShanWeight.api_client | Добавлено 1 неотправленных записей в очередь
+2026-01-21 15:32:20 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 15:32:20 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 15:32:20 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 15:32:20 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 15:32:20 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 15:32:24 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 15:32:25 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: False
+2026-01-21 15:32:35 | INFO     | TyanShanWeight.config | Конфигурация сохранена в C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 15:32:35 | INFO     | TyanShanWeight.settings_dialog | Настройки сохранены
+2026-01-21 15:32:35 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 15:32:35 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 15:32:35 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 15:32:35 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 15:32:35 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 15:32:35 | INFO     | TyanShanWeight.weighing_manager | Конфигурация обновлена
+2026-01-21 15:33:18 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 15:33:18 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 15:33:23 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 15:33:23 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 15:53:44 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 15:53:48 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: False
+2026-01-21 16:38:19 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 16:38:19 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 16:38:19 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 16:38:19 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 16:38:19 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 16:38:20 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 16:38:20 | INFO     | TyanShanWeight.camera | Создана директория для изображений: C:\Weights\images
+2026-01-21 16:38:20 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 16:38:20 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 16:38:20 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM4: could not open port 'COM4': PermissionError(13, 'Отказано в доступе.', None, 5)
+2026-01-21 16:38:20 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 16:38:20 | INFO     | TyanShanWeight.api_client | Добавлено 1 неотправленных записей в очередь
+2026-01-21 16:38:20 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 16:38:20 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 16:38:20 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 16:38:20 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 16:38:20 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 16:39:19 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 16:39:19 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: False
+2026-01-21 16:39:19 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 16:41:51 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 16:41:51 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 16:41:51 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 16:41:51 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 16:41:51 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 16:41:51 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 16:55:53 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 16:55:53 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 16:55:53 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 16:55:53 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 16:58:24 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 16:58:24 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 16:58:24 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 16:58:24 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 16:58:24 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 16:58:24 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 16:58:24 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 16:58:24 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 16:58:24 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 16:58:24 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 16:58:24 | INFO     | TyanShanWeight.api_client | Добавлено 1 неотправленных записей в очередь
+2026-01-21 16:58:24 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 16:58:24 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 16:58:24 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 16:58:24 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 16:58:24 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:06:54 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:08:37 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:08:37 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:08:37 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:08:37 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:08:37 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:08:37 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:08:37 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:08:37 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 17:08:37 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 17:08:37 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM4: could not open port 'COM4': PermissionError(13, 'Отказано в доступе.', None, 5)
+2026-01-21 17:08:37 | INFO     | TyanShanWeight.api_client | Добавлено 1 неотправленных записей в очередь
+2026-01-21 17:08:37 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:08:37 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 17:08:37 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 17:08:37 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:08:37 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:08:40 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:08:42 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 17:08:42 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 17:08:43 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 17:08:43 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 17:08:43 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:08:43 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 17:08:57 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: False
+2026-01-21 17:08:59 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:12:08 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 17:12:08 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 17:12:08 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 17:12:08 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 17:12:11 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:12:11 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:12:11 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:12:11 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:12:11 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:12:11 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:12:11 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:12:11 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 17:12:11 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 17:12:11 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 17:12:11 | INFO     | TyanShanWeight.api_client | Добавлено 1 неотправленных записей в очередь
+2026-01-21 17:12:11 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:12:11 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 17:12:11 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 17:12:11 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 17:12:11 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:12:20 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:12:23 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: False
+2026-01-21 17:12:23 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:14:06 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:14:06 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:14:06 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:14:06 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:14:06 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:14:06 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:14:06 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:14:06 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:14:21 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: False
+2026-01-21 17:14:21 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:14:24 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 17:14:24 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 17:14:24 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 17:14:24 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 17:14:24 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:14:24 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 17:19:55 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:19:55 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:19:55 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:19:55 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:19:55 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:19:55 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:19:55 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:19:55 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:20:15 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:20:15 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:20:16 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:20:16 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:20:16 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:20:16 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:20:16 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:20:16 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:22:01 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:22:01 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:22:01 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:22:01 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:22:01 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:22:01 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:22:01 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:22:01 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:22:01 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 17:22:01 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 17:22:01 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 17:22:01 | INFO     | TyanShanWeight.api_client | Добавлено 1 неотправленных записей в очередь
+2026-01-21 17:22:01 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:22:01 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 17:22:01 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 17:22:01 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 17:22:01 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:22:04 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: False
+2026-01-21 17:22:06 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:22:07 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: False
+2026-01-21 17:22:12 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:23:43 | INFO     | TyanShanWeight.weighing_manager | Тара зафиксирована: 11242.0 кг
+2026-01-21 17:23:43 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 1 (въезд)
+2026-01-21 17:23:43 | INFO     | TyanShanWeight.weighing_manager | Брутто зафиксировано: 36000.0 кг, нетто: 24758.0 кг
+2026-01-21 17:23:43 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 1 (въезд)
+2026-01-21 17:23:43 | INFO     | TyanShanWeight.database | Сохранена новая запись #2: 
+2026-01-21 17:23:43 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:23:44 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 17:23:44 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 17:23:45 | INFO     | TyanShanWeight.weighing_manager | Состояние сброшено
+2026-01-21 17:23:46 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_172346_Камера1въезд.jpg
+2026-01-21 17:23:46 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 2 (весы)
+2026-01-21 17:23:47 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_172347_Камера1въезд.jpg
+2026-01-21 17:23:47 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 2 (весы)
+2026-01-21 17:23:49 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_172349_Камера2весы.jpg
+2026-01-21 17:23:49 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 3 (выезд)
+2026-01-21 17:23:49 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_172349_Камера2весы.jpg
+2026-01-21 17:23:49 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 3 (выезд)
+2026-01-21 17:23:50 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_172350_Камера3выезд.jpg
+2026-01-21 17:23:50 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 4 (общий)
+2026-01-21 17:23:51 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_172351_Камера3выезд.jpg
+2026-01-21 17:23:51 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 4 (общий)
+2026-01-21 17:23:52 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_172352_Камера4общий.jpg
+2026-01-21 17:23:52 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
+2026-01-21 17:23:53 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_172353_Камера4общий.jpg
+2026-01-21 17:23:53 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
+2026-01-21 17:24:34 | INFO     | TyanShanWeight.weighing_manager | Состояние сброшено
+2026-01-21 17:24:50 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: False
+2026-01-21 17:30:58 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 17:30:58 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 17:30:58 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 17:30:58 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 17:30:58 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:30:58 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 17:30:59 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:30:59 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:30:59 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:30:59 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:30:59 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:30:59 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:30:59 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:30:59 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:30:59 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 17:30:59 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 17:30:59 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 17:30:59 | INFO     | TyanShanWeight.api_client | Добавлено 2 неотправленных записей в очередь
+2026-01-21 17:30:59 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:30:59 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 17:30:59 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 17:30:59 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 17:30:59 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:30:59 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:30:59 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 17:30:59 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 17:34:00 | INFO     | TyanShanWeight.weighing_manager | Тара зафиксирована: 36000.0 кг
+2026-01-21 17:34:00 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 1 (въезд)
+2026-01-21 17:34:00 | INFO     | TyanShanWeight.database | Сохранена новая запись #3: 01KG666OAO
+2026-01-21 17:34:02 | INFO     | TyanShanWeight.weighing_manager | Состояние сброшено
+2026-01-21 17:34:02 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_173402_Камера1въезд.jpg
+2026-01-21 17:34:02 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 2 (весы)
+2026-01-21 17:34:04 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_173404_Камера2весы.jpg
+2026-01-21 17:34:04 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 3 (выезд)
+2026-01-21 17:34:06 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_173406_Камера3выезд.jpg
+2026-01-21 17:34:06 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 4 (общий)
+2026-01-21 17:34:08 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_173408_Камера4общий.jpg
+2026-01-21 17:34:08 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
+2026-01-21 17:36:43 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:36:43 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:36:43 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:36:43 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:36:43 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:36:43 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:36:43 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:36:43 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:36:43 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 17:36:43 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 17:36:43 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM4: could not open port 'COM4': PermissionError(13, 'Отказано в доступе.', None, 5)
+2026-01-21 17:36:43 | INFO     | TyanShanWeight.api_client | Добавлено 3 неотправленных записей в очередь
+2026-01-21 17:36:43 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:36:43 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 17:36:43 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 17:36:43 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:36:43 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:36:43 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 17:36:43 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 17:36:43 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:36:43 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:36:44 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 17:36:44 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 17:37:04 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 17:37:04 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 17:37:04 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 17:37:04 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 17:37:04 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:37:04 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 17:37:09 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 17:37:09 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 17:37:09 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 17:37:09 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 17:37:43 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:37:43 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:37:43 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:37:43 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:37:43 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:37:43 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:37:43 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:37:43 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:37:43 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 17:37:43 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 17:37:43 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 17:37:43 | INFO     | TyanShanWeight.api_client | Добавлено 3 неотправленных записей в очередь
+2026-01-21 17:37:43 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:37:43 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 17:37:43 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 17:37:43 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 17:37:43 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:37:43 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:37:43 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 17:37:43 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 17:37:43 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:37:43 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 17:37:43 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 17:39:23 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:39:23 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:39:23 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:39:23 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:39:23 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:39:23 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:39:23 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:39:23 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:39:32 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: False
+2026-01-21 17:39:33 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:39:36 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 17:39:36 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 17:39:36 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 17:39:36 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 17:39:36 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:39:36 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 17:40:11 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:40:11 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:40:11 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:40:11 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:40:11 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:40:11 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:40:11 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:40:11 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:40:11 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 17:40:11 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 17:40:11 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 17:40:11 | INFO     | TyanShanWeight.api_client | Добавлено 3 неотправленных записей в очередь
+2026-01-21 17:40:11 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:40:11 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 17:40:11 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 17:40:11 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:40:11 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 17:40:11 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:40:11 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 17:40:11 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 17:40:11 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:40:11 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 17:40:11 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 17:40:25 | INFO     | TyanShanWeight.weighing_manager | Тара зафиксирована: 32000.0 кг
+2026-01-21 17:40:25 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 1 (въезд)
+2026-01-21 17:40:25 | INFO     | TyanShanWeight.database | Сохранена новая запись #4: ВЫФА
+2026-01-21 17:40:26 | INFO     | TyanShanWeight.weighing_manager | Состояние сброшено
+2026-01-21 17:40:27 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_174027_Камера1въезд.jpg
+2026-01-21 17:40:27 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 2 (весы)
+2026-01-21 17:40:29 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_174029_Камера2весы.jpg
+2026-01-21 17:40:29 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 3 (выезд)
+2026-01-21 17:40:31 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_174031_Камера3выезд.jpg
+2026-01-21 17:40:31 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 4 (общий)
+2026-01-21 17:40:32 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_174032_Камера4общий.jpg
+2026-01-21 17:40:32 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
+2026-01-21 17:42:02 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 17:42:02 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 17:42:02 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 17:42:02 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 17:42:02 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:42:02 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 17:42:04 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:42:04 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:42:04 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:42:04 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:42:04 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:42:04 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:42:04 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:42:04 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:42:04 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 17:42:04 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 17:42:04 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 17:42:04 | INFO     | TyanShanWeight.api_client | Добавлено 4 неотправленных записей в очередь
+2026-01-21 17:42:04 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:42:04 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 17:42:04 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 17:42:04 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 17:42:04 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:42:04 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:42:04 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 17:42:04 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 17:42:04 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:42:04 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 17:42:04 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 17:42:04 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:42:04 | INFO     | TyanShanWeight.database | Обновлен статус записи #4: sent=False
+2026-01-21 17:42:04 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #4: URL не настроен
+2026-01-21 17:42:27 | INFO     | TyanShanWeight.weighing_manager | Тара зафиксирована: 32000.0 кг
+2026-01-21 17:42:27 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 1 (въезд)
+2026-01-21 17:42:27 | INFO     | TyanShanWeight.database | Сохранена новая запись #5: 45325423
+2026-01-21 17:42:28 | INFO     | TyanShanWeight.weighing_manager | Состояние сброшено
+2026-01-21 17:42:29 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_174229_Камера1въезд.jpg
+2026-01-21 17:42:29 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 2 (весы)
+2026-01-21 17:42:31 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_174231_Камера2весы.jpg
+2026-01-21 17:42:31 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 3 (выезд)
+2026-01-21 17:42:33 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_174233_Камера3выезд.jpg
+2026-01-21 17:42:33 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 4 (общий)
+2026-01-21 17:42:35 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_174235_Камера4общий.jpg
+2026-01-21 17:42:35 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
+2026-01-21 17:43:14 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 17:43:14 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 17:43:14 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 17:43:14 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 17:43:14 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:43:14 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 17:43:16 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:43:16 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:43:16 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:43:16 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.api_client | Добавлено 5 неотправленных записей в очередь
+2026-01-21 17:43:16 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:43:16 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 17:43:16 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:43:16 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 17:43:16 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 17:43:16 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 17:43:16 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 17:43:16 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.database | Обновлен статус записи #4: sent=False
+2026-01-21 17:43:16 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #4: URL не настроен
+2026-01-21 17:43:16 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:43:16 | INFO     | TyanShanWeight.database | Обновлен статус записи #5: sent=False
+2026-01-21 17:43:16 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #5: URL не настроен
+2026-01-21 17:44:01 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:44:01 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:44:01 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:44:01 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:44:01 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:44:01 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:44:01 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:44:01 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:44:01 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 17:44:01 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM4: could not open port 'COM4': PermissionError(13, 'Отказано в доступе.', None, 5)
+2026-01-21 17:44:01 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 17:44:01 | INFO     | TyanShanWeight.api_client | Добавлено 5 неотправленных записей в очередь
+2026-01-21 17:44:01 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 17:44:01 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:44:01 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:44:01 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 17:44:01 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:44:01 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:44:01 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 17:44:01 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 17:44:01 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:44:01 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 17:44:01 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 17:44:01 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:44:01 | INFO     | TyanShanWeight.database | Обновлен статус записи #4: sent=False
+2026-01-21 17:44:01 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #4: URL не настроен
+2026-01-21 17:44:01 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:44:01 | INFO     | TyanShanWeight.database | Обновлен статус записи #5: sent=False
+2026-01-21 17:44:01 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #5: URL не настроен
+2026-01-21 17:44:12 | INFO     | TyanShanWeight.weighing_manager | Загружено взвешивание #5: Тара=32000.0
+2026-01-21 17:45:37 | INFO     | TyanShanWeight.weighing_manager | Состояние сброшено
+2026-01-21 17:45:43 | INFO     | TyanShanWeight.weighing_manager | Загружено взвешивание #3: Тара=36000.0
+2026-01-21 17:45:50 | INFO     | TyanShanWeight.weighing_manager | Загружено взвешивание #5: Тара=32000.0
+2026-01-21 17:48:14 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:48:14 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:48:14 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:48:14 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:48:14 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:48:14 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:48:14 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:48:14 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:48:14 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 17:48:14 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 17:48:14 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM4: could not open port 'COM4': PermissionError(13, 'Отказано в доступе.', None, 5)
+2026-01-21 17:48:14 | INFO     | TyanShanWeight.api_client | Добавлено 5 неотправленных записей в очередь
+2026-01-21 17:48:14 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:48:14 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 17:48:14 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:48:14 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 17:48:14 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:48:14 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:48:14 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 17:48:14 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 17:48:14 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:48:14 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 17:48:14 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 17:48:14 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:48:14 | INFO     | TyanShanWeight.database | Обновлен статус записи #4: sent=False
+2026-01-21 17:48:14 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #4: URL не настроен
+2026-01-21 17:48:14 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:48:14 | INFO     | TyanShanWeight.database | Обновлен статус записи #5: sent=False
+2026-01-21 17:48:14 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #5: URL не настроен
+2026-01-21 17:48:23 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 17:48:23 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 17:48:23 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 17:48:23 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 17:48:30 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 17:48:30 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 17:48:30 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 17:48:30 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 17:48:30 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:48:30 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 17:48:38 | INFO     | TyanShanWeight.weighing_manager | Загружено взвешивание #3: Тара=36000.0
+2026-01-21 17:48:55 | INFO     | TyanShanWeight.weighing_manager | Брутто зафиксировано: 56000.0 кг, нетто: 20000.0 кг
+2026-01-21 17:48:55 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 1 (въезд)
+2026-01-21 17:48:55 | INFO     | TyanShanWeight.database | Обновлена запись #3: 01KG666OAO
+2026-01-21 17:48:55 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:48:55 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 17:48:55 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 17:48:56 | INFO     | TyanShanWeight.weighing_manager | Состояние сброшено
+2026-01-21 17:48:58 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_174858_Камера1въезд.jpg
+2026-01-21 17:48:58 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 2 (весы)
+2026-01-21 17:48:59 | INFO     | TyanShanWeight.weighing_manager | Загружено взвешивание #5: Тара=32000.0
+2026-01-21 17:48:59 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_174859_Камера2весы.jpg
+2026-01-21 17:48:59 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 3 (выезд)
+2026-01-21 17:49:01 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_174901_Камера3выезд.jpg
+2026-01-21 17:49:01 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 4 (общий)
+2026-01-21 17:49:03 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images\20260121_174903_Камера4общий.jpg
+2026-01-21 17:49:03 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
+2026-01-21 17:49:03 | INFO     | TyanShanWeight.weighing_manager | Сохранено 4 фото для брутто
+2026-01-21 17:49:05 | INFO     | TyanShanWeight.weighing_manager | Состояние сброшено
+2026-01-21 17:50:03 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: False
+2026-01-21 17:50:04 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:50:52 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 17:50:52 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 17:50:52 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 17:50:52 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 17:50:59 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:50:59 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:50:59 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:50:59 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.api_client | Добавлено 5 неотправленных записей в очередь
+2026-01-21 17:50:59 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 17:50:59 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 17:50:59 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:50:59 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 17:50:59 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 17:50:59 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 17:50:59 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 17:50:59 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.database | Обновлен статус записи #4: sent=False
+2026-01-21 17:50:59 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #4: URL не настроен
+2026-01-21 17:50:59 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:50:59 | INFO     | TyanShanWeight.database | Обновлен статус записи #5: sent=False
+2026-01-21 17:50:59 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #5: URL не настроен
+2026-01-21 17:58:43 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 17:58:43 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 17:58:43 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 17:58:43 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 17:58:43 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 17:58:43 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 17:58:43 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 17:58:43 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 17:58:43 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 17:58:43 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 17:58:43 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM4: could not open port 'COM4': PermissionError(13, 'Отказано в доступе.', None, 5)
+2026-01-21 17:58:43 | INFO     | TyanShanWeight.api_client | Добавлено 5 неотправленных записей в очередь
+2026-01-21 17:58:43 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:58:43 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 17:58:43 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 17:58:43 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 17:58:43 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:58:43 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 17:58:43 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 17:58:43 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:58:43 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:58:43 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 17:58:43 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 17:58:43 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:58:43 | INFO     | TyanShanWeight.database | Обновлен статус записи #4: sent=False
+2026-01-21 17:58:43 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #4: URL не настроен
+2026-01-21 17:58:43 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 17:58:43 | INFO     | TyanShanWeight.database | Обновлен статус записи #5: sent=False
+2026-01-21 17:58:43 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #5: URL не настроен
+2026-01-21 17:58:44 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 17:58:44 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 17:58:44 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 17:58:44 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 17:58:44 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 17:58:44 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 18:10:29 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 18:10:29 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 18:10:29 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 18:10:29 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 18:10:37 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 18:10:37 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 18:10:37 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 18:10:37 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.api_client | Добавлено 5 неотправленных записей в очередь
+2026-01-21 18:10:37 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:10:37 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 18:10:37 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 18:10:37 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 18:10:37 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 18:10:37 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 18:10:37 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 18:10:37 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.database | Обновлен статус записи #4: sent=False
+2026-01-21 18:10:37 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #4: URL не настроен
+2026-01-21 18:10:37 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:10:37 | INFO     | TyanShanWeight.database | Обновлен статус записи #5: sent=False
+2026-01-21 18:10:37 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #5: URL не настроен
+2026-01-21 18:12:17 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 18:12:17 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 18:12:17 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 18:12:17 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 18:12:17 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 18:12:17 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 18:12:26 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 18:12:26 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 18:12:26 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 18:12:26 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 18:12:26 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 18:12:26 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 18:12:26 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 18:12:26 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 18:12:26 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 18:12:26 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 18:12:26 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 18:12:26 | INFO     | TyanShanWeight.api_client | Добавлено 5 неотправленных записей в очередь
+2026-01-21 18:12:26 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:12:26 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 18:12:26 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 18:12:26 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 18:12:26 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 18:12:26 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:12:26 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 18:12:26 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 18:12:26 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:12:26 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 18:12:26 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 18:12:26 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:12:26 | INFO     | TyanShanWeight.database | Обновлен статус записи #4: sent=False
+2026-01-21 18:12:26 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #4: URL не настроен
+2026-01-21 18:12:26 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:12:27 | INFO     | TyanShanWeight.database | Обновлен статус записи #5: sent=False
+2026-01-21 18:12:27 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #5: URL не настроен
+2026-01-21 18:14:12 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 18:14:12 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 18:14:12 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 18:14:12 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 18:14:12 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 18:14:12 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 18:14:12 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 18:14:12 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 18:14:12 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 18:14:12 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 18:14:12 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM4: could not open port 'COM4': PermissionError(13, 'Отказано в доступе.', None, 5)
+2026-01-21 18:14:12 | INFO     | TyanShanWeight.api_client | Добавлено 5 неотправленных записей в очередь
+2026-01-21 18:14:12 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:14:12 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 18:14:12 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 18:14:12 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 18:14:12 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:14:12 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 18:14:12 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 18:14:12 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 18:14:12 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:14:12 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 18:14:12 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 18:14:12 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:14:12 | INFO     | TyanShanWeight.database | Обновлен статус записи #4: sent=False
+2026-01-21 18:14:12 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #4: URL не настроен
+2026-01-21 18:14:12 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:14:12 | INFO     | TyanShanWeight.database | Обновлен статус записи #5: sent=False
+2026-01-21 18:14:12 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #5: URL не настроен
+2026-01-21 18:16:12 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 18:16:12 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 18:16:12 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 18:16:12 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 18:16:12 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 18:16:12 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 18:16:12 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 18:16:12 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 18:16:12 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 18:16:12 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM4: could not open port 'COM4': PermissionError(13, 'Отказано в доступе.', None, 5)
+2026-01-21 18:16:12 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 18:16:12 | INFO     | TyanShanWeight.api_client | Добавлено 5 неотправленных записей в очередь
+2026-01-21 18:16:12 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:16:12 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 18:16:12 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 18:16:12 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 18:16:12 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:16:12 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 18:16:12 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 18:16:12 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:16:12 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 18:16:12 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 18:16:12 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 18:16:12 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:16:12 | INFO     | TyanShanWeight.database | Обновлен статус записи #4: sent=False
+2026-01-21 18:16:12 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #4: URL не настроен
+2026-01-21 18:16:12 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:16:12 | INFO     | TyanShanWeight.database | Обновлен статус записи #5: sent=False
+2026-01-21 18:16:12 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #5: URL не настроен
+2026-01-21 18:16:31 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 18:16:31 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 18:16:31 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 18:16:31 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 18:16:37 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 18:16:37 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 18:16:37 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 18:16:37 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 18:16:37 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 18:16:37 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 18:16:58 | INFO     | TyanShanWeight.weighing_manager | Состояние сброшено
+2026-01-21 18:17:02 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 18:17:02 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 18:17:02 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 18:17:02 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 18:19:36 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 18:19:36 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 18:19:36 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 18:19:36 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.scale_reader | Подключено к COM4 @ 9600
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.api_client | Добавлено 5 неотправленных записей в очередь
+2026-01-21 18:19:36 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:19:36 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.weighing_manager | Весы подключены
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 18:19:36 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 18:19:36 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 18:19:36 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 18:19:36 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 18:19:36 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 18:19:36 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.database | Обновлен статус записи #4: sent=False
+2026-01-21 18:19:36 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #4: URL не настроен
+2026-01-21 18:19:36 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:19:36 | INFO     | TyanShanWeight.database | Обновлен статус записи #5: sent=False
+2026-01-21 18:19:36 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #5: URL не настроен
+2026-01-21 18:21:14 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-01-21 18:21:14 | INFO     | TyanShanWeight       | ==================================================
+2026-01-21 18:21:14 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-01-21 18:21:14 | INFO     | TyanShanWeight       | Директория: C:\Users\user\Desktop\TyanShanWeight
+2026-01-21 18:21:14 | INFO     | TyanShanWeight.config | Конфигурация загружена из C:\Users\user\Desktop\TyanShanWeight\config.json
+2026-01-21 18:21:14 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-01-21 18:21:14 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-01-21 18:21:15 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-01-21 18:21:15 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-01-21 18:21:15 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-01-21 18:21:15 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM4: could not open port 'COM4': PermissionError(13, 'Отказано в доступе.', None, 5)
+2026-01-21 18:21:15 | INFO     | TyanShanWeight.api_client | Добавлено 5 неотправленных записей в очередь
+2026-01-21 18:21:15 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:21:15 | INFO     | TyanShanWeight       | Приложение запущено
+2026-01-21 18:21:15 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=False
+2026-01-21 18:21:15 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #1: URL не настроен
+2026-01-21 18:21:15 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:21:15 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=False
+2026-01-21 18:21:15 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #2: URL не настроен
+2026-01-21 18:21:15 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:21:15 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 18:21:15 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=False
+2026-01-21 18:21:15 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #3: URL не настроен
+2026-01-21 18:21:15 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:21:15 | INFO     | TyanShanWeight.database | Обновлен статус записи #4: sent=False
+2026-01-21 18:21:15 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #4: URL не настроен
+2026-01-21 18:21:15 | WARNING  | TyanShanWeight.api_client | URL API не настроен
+2026-01-21 18:21:15 | INFO     | TyanShanWeight.database | Обновлен статус записи #5: sent=False
+2026-01-21 18:21:15 | WARNING  | TyanShanWeight.weighing_manager | Ошибка отправки #5: URL не настроен
+2026-01-21 18:21:36 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 18:21:36 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 18:21:36 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 18:21:36 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-01-21 18:23:06 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-01-21 18:23:06 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-01-21 18:23:06 | INFO     | TyanShanWeight.scale_reader | Отключено от COM-порта
+2026-01-21 18:23:06 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-01-21 18:23:06 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-01-21 18:23:06 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0

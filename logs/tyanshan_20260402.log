@@ -1,0 +1,153 @@
+2026-04-02 23:52:30 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-04-02 23:52:30 | INFO     | TyanShanWeight       | ==================================================
+2026-04-02 23:52:30 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-04-02 23:52:30 | INFO     | TyanShanWeight       | Директория: /Users/zalkarkulmamatov/Desktop/projects/tsr/TyanShanWeight
+2026-04-02 23:52:30 | INFO     | TyanShanWeight.config | Конфигурация загружена из /Users/zalkarkulmamatov/Desktop/projects/tsr/TyanShanWeight/config.json
+2026-04-02 23:52:31 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-04-02 23:52:31 | INFO     | TyanShanWeight.camera | Создана директория для изображений: C:\Weights\images
+2026-04-02 23:52:31 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-04-02 23:52:32 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM4: [Errno 2] could not open port COM4: [Errno 2] No such file or directory: 'COM4'
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.api_client | Добавлено 5 неотправленных записей в очередь
+2026-04-02 23:52:32 | INFO     | TyanShanWeight       | Приложение запущено
+2026-04-02 23:52:32 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.api_client | Запись #1 успешно отправлена
+2026-04-02 23:52:32 | ERROR    | TyanShanWeight.database | Ошибка БД: name 'datetime' is not defined
+2026-04-02 23:52:32 | ERROR    | TyanShanWeight.database | Ошибка логирования вебхука: name 'datetime' is not defined
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.database | Обновлен статус записи #1: sent=True
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.weighing_manager | Запись #1 успешно отправлена на API
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.api_client | Запись #2 успешно отправлена
+2026-04-02 23:52:32 | ERROR    | TyanShanWeight.database | Ошибка БД: name 'datetime' is not defined
+2026-04-02 23:52:32 | ERROR    | TyanShanWeight.database | Ошибка логирования вебхука: name 'datetime' is not defined
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.database | Обновлен статус записи #2: sent=True
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.weighing_manager | Запись #2 успешно отправлена на API
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.api_client | Запись #3 успешно отправлена
+2026-04-02 23:52:32 | ERROR    | TyanShanWeight.database | Ошибка БД: name 'datetime' is not defined
+2026-04-02 23:52:32 | ERROR    | TyanShanWeight.database | Ошибка логирования вебхука: name 'datetime' is not defined
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.database | Обновлен статус записи #3: sent=True
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.weighing_manager | Запись #3 успешно отправлена на API
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.api_client | Запись #4 успешно отправлена
+2026-04-02 23:52:32 | ERROR    | TyanShanWeight.database | Ошибка БД: name 'datetime' is not defined
+2026-04-02 23:52:32 | ERROR    | TyanShanWeight.database | Ошибка логирования вебхука: name 'datetime' is not defined
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.database | Обновлен статус записи #4: sent=True
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.weighing_manager | Запись #4 успешно отправлена на API
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.api_client | Запись #5 успешно отправлена
+2026-04-02 23:52:32 | ERROR    | TyanShanWeight.database | Ошибка БД: name 'datetime' is not defined
+2026-04-02 23:52:32 | ERROR    | TyanShanWeight.database | Ошибка логирования вебхука: name 'datetime' is not defined
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.database | Обновлен статус записи #5: sent=True
+2026-04-02 23:52:32 | INFO     | TyanShanWeight.weighing_manager | Запись #5 успешно отправлена на API
+2026-04-02 23:52:43 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-04-02 23:52:43 | INFO     | TyanShanWeight       | ==================================================
+2026-04-02 23:52:43 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-04-02 23:52:43 | INFO     | TyanShanWeight       | Директория: /Users/zalkarkulmamatov/Desktop/projects/tsr/TyanShanWeight
+2026-04-02 23:52:43 | INFO     | TyanShanWeight.config | Конфигурация загружена из /Users/zalkarkulmamatov/Desktop/projects/tsr/TyanShanWeight/config.json
+2026-04-02 23:52:43 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-04-02 23:52:43 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-04-02 23:52:43 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-04-02 23:52:43 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-04-02 23:52:43 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM4: [Errno 2] could not open port COM4: [Errno 2] No such file or directory: 'COM4'
+2026-04-02 23:52:43 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-04-02 23:52:43 | INFO     | TyanShanWeight       | Приложение запущено
+2026-04-02 23:52:43 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-04-02 23:52:48 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-04-02 23:52:48 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-04-02 23:52:48 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-04-02 23:52:48 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-04-02 23:53:25 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: False
+2026-04-02 23:53:27 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-04-02 23:53:29 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: False
+2026-04-02 23:53:30 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-04-02 23:54:01 | INFO     | TyanShanWeight.weighing_manager | Тара зафиксирована: 110.0 кг
+2026-04-02 23:54:01 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 1 (въезд)
+2026-04-02 23:54:01 | INFO     | TyanShanWeight.weighing_manager | Брутто зафиксировано: 1110.0 кг, нетто: 1000.0 кг
+2026-04-02 23:54:01 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 1 (въезд)
+2026-04-02 23:54:01 | INFO     | TyanShanWeight.database | Сохранена новая запись #6: 12321
+2026-04-02 23:54:01 | INFO     | TyanShanWeight.api_client | Запись #6 успешно отправлена
+2026-04-02 23:54:01 | ERROR    | TyanShanWeight.database | Ошибка БД: name 'datetime' is not defined
+2026-04-02 23:54:01 | ERROR    | TyanShanWeight.database | Ошибка логирования вебхука: name 'datetime' is not defined
+2026-04-02 23:54:01 | INFO     | TyanShanWeight.database | Обновлен статус записи #6: sent=True
+2026-04-02 23:54:01 | INFO     | TyanShanWeight.weighing_manager | Запись #6 успешно отправлена на API
+2026-04-02 23:54:02 | INFO     | TyanShanWeight.weighing_manager | Состояние сброшено
+2026-04-02 23:54:02 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260402_235402_Камера1въезд.jpg
+2026-04-02 23:54:02 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 2 (весы)
+2026-04-02 23:54:03 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260402_235403_Камера1въезд.jpg
+2026-04-02 23:54:03 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 2 (весы)
+2026-04-02 23:54:04 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260402_235404_Камера2весы.jpg
+2026-04-02 23:54:04 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 3 (выезд)
+2026-04-02 23:54:04 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260402_235404_Камера2весы.jpg
+2026-04-02 23:54:04 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 3 (выезд)
+2026-04-02 23:54:05 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260402_235405_Камера3выезд.jpg
+2026-04-02 23:54:05 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 4 (общий)
+2026-04-02 23:54:06 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260402_235406_Камера3выезд.jpg
+2026-04-02 23:54:06 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 4 (общий)
+2026-04-02 23:54:07 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260402_235407_Камера4общий.jpg
+2026-04-02 23:54:07 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
+2026-04-02 23:54:07 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260402_235407_Камера4общий.jpg
+2026-04-02 23:54:07 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
+2026-04-02 23:54:49 | INFO     | TyanShanWeight       | Логирование инициализировано
+2026-04-02 23:54:49 | INFO     | TyanShanWeight       | ==================================================
+2026-04-02 23:54:49 | INFO     | TyanShanWeight       | Запуск TyanShanWeight
+2026-04-02 23:54:49 | INFO     | TyanShanWeight       | Директория: /Users/zalkarkulmamatov/Desktop/projects/tsr/TyanShanWeight
+2026-04-02 23:54:49 | INFO     | TyanShanWeight.config | Конфигурация загружена из /Users/zalkarkulmamatov/Desktop/projects/tsr/TyanShanWeight/config.json
+2026-04-02 23:54:49 | INFO     | TyanShanWeight.database | База данных инициализирована: weighings.db
+2026-04-02 23:54:49 | INFO     | TyanShanWeight.camera | Загружено 4 камер
+2026-04-02 23:54:50 | INFO     | TyanShanWeight.weighing_manager | Ручной режим: True
+2026-04-02 23:54:50 | INFO     | TyanShanWeight.weighing_manager | Запуск менеджера взвешивания
+2026-04-02 23:54:50 | ERROR    | TyanShanWeight.scale_reader | Ошибка подключения к COM4: [Errno 2] could not open port COM4: [Errno 2] No such file or directory: 'COM4'
+2026-04-02 23:54:50 | INFO     | TyanShanWeight.api_client | API клиент запущен
+2026-04-02 23:54:50 | INFO     | TyanShanWeight       | Приложение запущено
+2026-04-02 23:54:50 | WARNING  | TyanShanWeight.weighing_manager | Весы отключены
+2026-04-02 23:54:54 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-04-02 23:54:54 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-04-02 23:54:54 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-04-02 23:54:54 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0
+2026-04-03 00:02:04 | INFO     | TyanShanWeight.weighing_manager | Тара зафиксирована: 1000.0 кг
+2026-04-03 00:02:04 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 1 (въезд)
+2026-04-03 00:02:06 | INFO     | TyanShanWeight.weighing_manager | Тара зафиксирована: 1000.0 кг
+2026-04-03 00:02:06 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 1 (въезд)
+2026-04-03 00:02:06 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000206_Камера1въезд.jpg
+2026-04-03 00:02:06 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 2 (весы)
+2026-04-03 00:02:06 | INFO     | TyanShanWeight.weighing_manager | Тара зафиксирована: 1000.0 кг
+2026-04-03 00:02:06 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 1 (въезд)
+2026-04-03 00:02:06 | INFO     | TyanShanWeight.weighing_manager | Тара зафиксирована: 1000.0 кг
+2026-04-03 00:02:06 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 1 (въезд)
+2026-04-03 00:02:07 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000207_Камера1въезд.jpg
+2026-04-03 00:02:07 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 2 (весы)
+2026-04-03 00:02:07 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000207_Камера2весы.jpg
+2026-04-03 00:02:07 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 3 (выезд)
+2026-04-03 00:02:08 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000208_Камера1въезд.jpg
+2026-04-03 00:02:08 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 2 (весы)
+2026-04-03 00:02:08 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000208_Камера1въезд.jpg
+2026-04-03 00:02:08 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 2 (весы)
+2026-04-03 00:02:09 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000209_Камера2весы.jpg
+2026-04-03 00:02:09 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 3 (выезд)
+2026-04-03 00:02:09 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000209_Камера3выезд.jpg
+2026-04-03 00:02:09 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 4 (общий)
+2026-04-03 00:02:10 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000210_Камера2весы.jpg
+2026-04-03 00:02:10 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 3 (выезд)
+2026-04-03 00:02:10 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000210_Камера2весы.jpg
+2026-04-03 00:02:10 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 3 (выезд)
+2026-04-03 00:02:10 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000210_Камера3выезд.jpg
+2026-04-03 00:02:10 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 4 (общий)
+2026-04-03 00:02:11 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000211_Камера4общий.jpg
+2026-04-03 00:02:11 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
+2026-04-03 00:02:11 | INFO     | TyanShanWeight.weighing_manager | Сохранено 4 фото для тары
+2026-04-03 00:02:11 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000211_Камера3выезд.jpg
+2026-04-03 00:02:11 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 4 (общий)
+2026-04-03 00:02:11 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000211_Камера3выезд.jpg
+2026-04-03 00:02:11 | INFO     | TyanShanWeight.camera | Захват кадра с камеры: Камера 4 (общий)
+2026-04-03 00:02:12 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000212_Камера4общий.jpg
+2026-04-03 00:02:12 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
+2026-04-03 00:02:12 | INFO     | TyanShanWeight.weighing_manager | Сохранено 4 фото для тары
+2026-04-03 00:02:12 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000212_Камера4общий.jpg
+2026-04-03 00:02:12 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
+2026-04-03 00:02:12 | INFO     | TyanShanWeight.weighing_manager | Сохранено 4 фото для тары
+2026-04-03 00:02:13 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_000213_Камера4общий.jpg
+2026-04-03 00:02:13 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
+2026-04-03 00:02:13 | INFO     | TyanShanWeight.weighing_manager | Сохранено 4 фото для тары
+2026-04-03 00:11:10 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-04-03 00:11:10 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-04-03 00:11:10 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-04-03 00:11:10 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0

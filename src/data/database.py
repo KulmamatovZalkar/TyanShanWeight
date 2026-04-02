@@ -93,6 +93,16 @@ class Database:
             except sqlite3.OperationalError:
                 pass
 
+            try:
+                conn.execute('ALTER TABLE weighings ADD COLUMN counterparty_id TEXT')
+            except sqlite3.OperationalError:
+                pass
+
+            try:
+                conn.execute('ALTER TABLE weighings ADD COLUMN counterparty_name TEXT')
+            except sqlite3.OperationalError:
+                pass
+
             logger.info(f"База данных инициализирована: {self.db_path}")
     
     def log_webhook_attempt(self, weighing_id: int, success: bool, response_code: Optional[int], response_body: str) -> None:
@@ -125,21 +135,23 @@ class Database:
                     UPDATE weighings SET
                         datetime = ?, car_number = ?, tara = ?, brutto = ?, netto = ?,
                         fio = ?, fraction = ?, sent = ?, api_response = ?,
-                        photos_tara = ?, photos_brutto = ?, notes = ?
+                        photos_tara = ?, photos_brutto = ?, notes = ?,
+                        counterparty_id = ?, counterparty_name = ?
                     WHERE id = ?
                 ''', (
                     weighing.datetime, weighing.car_number, weighing.tara, weighing.brutto, weighing.netto,
                     weighing.fio, weighing.fraction, int(weighing.sent), weighing.api_response,
                     json.dumps(weighing.photos_tara), json.dumps(weighing.photos_brutto), weighing.notes,
+                    weighing.counterparty_id, weighing.counterparty_name,
                     weighing.id
                 ))
                 logger.info(f"Обновлена запись #{weighing.id}: {weighing.car_number}")
             else:
                 # Новая запись
                 cursor = conn.execute('''
-                    INSERT INTO weighings 
-                    (datetime, car_number, tara, brutto, netto, fio, fraction, sent, api_response, photos_tara, photos_brutto, notes)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    INSERT INTO weighings
+                    (datetime, car_number, tara, brutto, netto, fio, fraction, sent, api_response, photos_tara, photos_brutto, notes, counterparty_id, counterparty_name)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ''', (
                     weighing.datetime,
                     weighing.car_number,
@@ -152,7 +164,9 @@ class Database:
                     weighing.api_response,
                     json.dumps(weighing.photos_tara),
                     json.dumps(weighing.photos_brutto),
-                    weighing.notes
+                    weighing.notes,
+                    weighing.counterparty_id,
+                    weighing.counterparty_name,
                 ))
                 weighing.id = cursor.lastrowid
                 logger.info(f"Сохранена новая запись #{weighing.id}: {weighing.car_number}")
@@ -183,6 +197,17 @@ class Database:
             row = cursor.fetchone()
             return self._row_to_weighing(row) if row else None
     
+    def delete_weighing(self, weighing_id: int) -> bool:
+        """Удалить запись взвешивания."""
+        try:
+            with self._get_connection() as conn:
+                conn.execute('DELETE FROM weighings WHERE id = ?', (weighing_id,))
+            logger.info(f"Удалена запись #{weighing_id}")
+            return True
+        except Exception as e:
+            logger.error(f"Ошибка удаления записи #{weighing_id}: {e}")
+            return False
+
     def update_sent_status(self, weighing_id: int, sent: bool, api_response: str = "") -> bool:
         """Обновить статус отправки."""
         try:
@@ -277,6 +302,13 @@ class Database:
         if 'notes' in row.keys() and row['notes']:
             notes = row['notes']
 
+        counterparty_id = ""
+        if 'counterparty_id' in row.keys() and row['counterparty_id']:
+            counterparty_id = row['counterparty_id']
+        counterparty_name = ""
+        if 'counterparty_name' in row.keys() and row['counterparty_name']:
+            counterparty_name = row['counterparty_name']
+
         return Weighing(
             id=row['id'],
             datetime=row['datetime'],
@@ -286,6 +318,8 @@ class Database:
             netto=row['netto'],
             fio=row['fio'] or "",
             fraction=row['fraction'] or "",
+            counterparty_id=counterparty_id,
+            counterparty_name=counterparty_name,
             notes=notes,
             sent=bool(row['sent']),
             api_response=row['api_response'] or "",

@@ -8,7 +8,7 @@
     "timeout": 1.0
   },
   "api": {
-    "url": "",
+    "url": "http://localhost:14004/api/v1/transactions/webhook/weighing/",
     "timeout": 30,
     "retry_count": 3,
     "retry_delay": 5

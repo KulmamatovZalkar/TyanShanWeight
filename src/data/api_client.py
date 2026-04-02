@@ -222,11 +222,46 @@ class ApiClient:
     def send_immediate(self, weighing: Weighing) -> tuple[bool, str]:
         """
         Синхронная отправка (для тестирования).
-        
+
         Args:
             weighing: Запись для отправки
-            
+
         Returns:
             (успех, ответ)
         """
         return self._send_with_retry(weighing)
+
+    def fetch_lookups(self) -> Optional[dict]:
+        """
+        Загрузить справочники с сервера (водители, госномера, контрагенты, грузы).
+
+        Returns:
+            dict с ключами: counterparties, fractions, drivers, cars
+            None при ошибке
+        """
+        if not self.config.url:
+            logger.warning("URL API не настроен, справочники не загружены")
+            return None
+
+        # URL lookup = webhook URL + "lookup/?type=all"
+        base_url = self.config.url.rstrip('/')
+        lookup_url = base_url + '/lookup/?type=all'
+
+        try:
+            response = requests.get(lookup_url, timeout=self.config.timeout)
+            if response.ok:
+                data = response.json()
+                logger.info(
+                    f"Справочники загружены: "
+                    f"{len(data.get('counterparties', []))} контрагентов, "
+                    f"{len(data.get('fractions', []))} грузов, "
+                    f"{len(data.get('drivers', []))} водителей, "
+                    f"{len(data.get('cars', []))} госномеров"
+                )
+                return data
+            else:
+                logger.warning(f"Ошибка загрузки справочников: HTTP {response.status_code}")
+                return None
+        except Exception as e:
+            logger.warning(f"Не удалось загрузить справочники: {e}")
+            return None

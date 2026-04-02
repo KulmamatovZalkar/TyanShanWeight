@@ -13,8 +13,9 @@ from PySide6.QtWidgets import (
     QSplitter, QFormLayout, QCheckBox, QDoubleSpinBox, QTextEdit,
     QTableWidget, QTableWidgetItem, QHeaderView, QDialog, QFileDialog
 )
-from PySide6.QtCore import Qt, Slot, QTimer, QSize
+from PySide6.QtCore import Qt, Slot, QTimer, QSize, QStringListModel
 from PySide6.QtGui import QKeySequence, QShortcut, QImage, QPixmap, QFont
+from PySide6.QtWidgets import QCompleter
 
 from .styles import MAIN_STYLE, COLORS
 from .settings_dialog import SettingsDialog
@@ -297,10 +298,20 @@ class MainWindow(QMainWindow):
         self.fio_edit.returnPressed.connect(lambda: self.fraction_combo.setFocus())
         input_layout.addRow("Водитель:", self.fio_edit)
         
+        # Компания (контрагент)
+        self.company_combo = QComboBox()
+        self.company_combo.setFixedHeight(50)
+        self.company_combo.setEditable(True)
+        self.company_combo.setInsertPolicy(QComboBox.NoInsert)
+        self.company_combo.lineEdit().setPlaceholderText("Начните вводить...")
+        self.company_combo.currentTextChanged.connect(self._on_data_changed)
+        input_layout.addRow("Компания:", self.company_combo)
+        self._server_counterparties = []
+
         self.fraction_combo = QComboBox()
         self.fraction_combo.setFixedHeight(50)
         self.fraction_combo.addItems(self.config_manager.config.fractions)
-        self.fraction_combo.setEditable(False) # Сделал нередактируемым списком
+        self.fraction_combo.setEditable(False)
         self.fraction_combo.currentTextChanged.connect(self._on_data_changed)
         input_layout.addRow("Груз:", self.fraction_combo)
 
@@ -491,6 +502,7 @@ class MainWindow(QMainWindow):
         self.manager.state_changed.connect(self._on_state_changed)
         self.manager.connection_status.connect(self._on_connection_status)
         self.manager.error.connect(self._show_error)
+        self.manager.lookups_loaded.connect(self._on_lookups_loaded)
 
     def _setup_shortcuts(self) -> None:
         """Настройка горячих клавиш."""
@@ -566,6 +578,49 @@ class MainWindow(QMainWindow):
     def _show_error(self, message: str) -> None:
         QMessageBox.warning(self, "Ошибка", message)
 
+    @Slot(dict)
+    def _on_lookups_loaded(self, data: dict) -> None:
+        """Справочники загружены с сервера — настраиваем автоподсказки."""
+        # Автоподсказки для госномера
+        cars = data.get('cars', [])
+        if cars:
+            car_completer = QCompleter(cars, self)
+            car_completer.setCaseSensitivity(Qt.CaseInsensitive)
+            car_completer.setFilterMode(Qt.MatchContains)
+            self.car_number_edit.setCompleter(car_completer)
+
+        # Автоподсказки для водителя
+        drivers = data.get('drivers', [])
+        if drivers:
+            driver_completer = QCompleter(drivers, self)
+            driver_completer.setCaseSensitivity(Qt.CaseInsensitive)
+            driver_completer.setFilterMode(Qt.MatchContains)
+            self.fio_edit.setCompleter(driver_completer)
+
+        # Обновляем грузы из сервера (добавляем к локальным)
+        fractions = data.get('fractions', [])
+        if fractions:
+            server_fractions = [f['title'] for f in fractions]
+            existing = [self.fraction_combo.itemText(i) for i in range(self.fraction_combo.count())]
+            for f in server_fractions:
+                if f not in existing:
+                    self.fraction_combo.addItem(f)
+
+        # Заполняем dropdown компаний
+        self._server_counterparties = data.get('counterparties', [])
+        if self._server_counterparties:
+            self.company_combo.clear()
+            self.company_combo.addItem('')  # пустой первый элемент
+            for c in self._server_counterparties:
+                self.company_combo.addItem(c['title'], c['id'])
+            # Автоподсказка при вводе
+            company_completer = QCompleter([c['title'] for c in self._server_counterparties], self)
+            company_completer.setCaseSensitivity(Qt.CaseInsensitive)
+            company_completer.setFilterMode(Qt.MatchContains)
+            self.company_combo.setCompleter(company_completer)
+
+        logger.info(f"Автоподсказки настроены: {len(cars)} номеров, {len(drivers)} водителей, {len(fractions)} грузов")
+
     def _open_settings(self) -> None:
         dialog = SettingsDialog(self.config_manager, self)
         # Останавливаем камеру пока настройки открыты (чтобы не занимать ресурсы)
@@ -584,9 +639,39 @@ class MainWindow(QMainWindow):
         if self.camera_selector.count() > 0:
             self._on_camera_changed(self.camera_selector.currentIndex())
 
+    def _get_counterparty(self) -> tuple:
+        """Получить id и название выбранного контрагента."""
+        idx = self.company_combo.currentIndex()
+        cp_id = self.company_combo.itemData(idx) if idx > 0 else ""
+        cp_name = self.company_combo.currentText().strip()
+        return cp_id or "", cp_name
+
     def _fix_tara(self) -> None:
-        if self.manual_mode_btn.isChecked(): # Ручной режим
-            self.manager.fix_tara(self.tara_input.value())
+        if self.manual_mode_btn.isChecked():  # Ручной режим
+            tara_val = self.tara_input.value()
+            if tara_val <= 0:
+                QMessageBox.warning(self, "Ошибка", "Введите вес тары!")
+                return
+            self.manager.fix_tara(tara_val)
+            # Сразу сохраняем как ожидающую (brutto=0)
+            car = self.car_number_edit.text().strip()
+            if not car:
+                QMessageBox.warning(self, "Ошибка", "Введите госномер!")
+                return
+            if car:
+                cp_id, cp_name = self._get_counterparty()
+                self.manager.save_weighing(
+                    car,
+                    self.fio_edit.text(),
+                    self.fraction_combo.currentText(),
+                    self.notes_edit.toPlainText(),
+                    cp_id, cp_name
+                )
+                QMessageBox.information(
+                    self, "Тара зафиксирована",
+                    f"Тара: {tara_val:.0f} кг\n"
+                    f"Машина {car} добавлена в ожидающие."
+                )
         else:
             self.manager.fix_tara()
 
@@ -612,11 +697,13 @@ class MainWindow(QMainWindow):
                         return
                 
                 # Сохраняем как "Незавершенное"
+                cp_id, cp_name = self._get_counterparty()
                 if self.manager.save_weighing(
                     self.car_number_edit.text(),
                     self.fio_edit.text(),
                     self.fraction_combo.currentText(),
-                    self.notes_edit.toPlainText()
+                    self.notes_edit.toPlainText(),
+                    cp_id, cp_name
                 ):
                     QMessageBox.information(
                         self, "Заезд", 
@@ -647,11 +734,13 @@ class MainWindow(QMainWindow):
                 return
         
         # Сохранение (для Авто режима или если прошли проверки выше)
+        cp_id, cp_name = self._get_counterparty()
         self.manager.save_weighing(
             self.car_number_edit.text(),
             self.fio_edit.text(),
             self.fraction_combo.currentText(),
-            self.notes_edit.toPlainText()
+            self.notes_edit.toPlainText(),
+            cp_id, cp_name
         )
 
     def _reset_weighing(self) -> None:
@@ -659,6 +748,7 @@ class MainWindow(QMainWindow):
         self.netto_display.setText("— кг")
         self.car_number_edit.clear()
         self.fio_edit.clear()
+        self.company_combo.setCurrentIndex(0)
         self.notes_edit.clear()
 
     def _on_data_changed(self) -> None:
@@ -797,13 +887,36 @@ class MainWindow(QMainWindow):
             select_btn.setStyleSheet("background-color: #4CAF50; color: white; padding: 10px;")
             select_btn.clicked.connect(dialog.accept)
             btn_layout.addWidget(select_btn)
-            
+
+            def delete_selected():
+                row = table.currentRow()
+                if row < 0:
+                    QMessageBox.warning(dialog, "Ошибка", "Выберите запись для удаления")
+                    return
+                w = pending[row]
+                confirm = QMessageBox.question(
+                    dialog, "Удалить?",
+                    f"Удалить ожидающую запись?\n{w.car_number} — тара {w.tara:.0f} кг",
+                    QMessageBox.Yes | QMessageBox.No
+                )
+                if confirm == QMessageBox.Yes:
+                    self.manager.database.delete_weighing(w.id)
+                    pending.pop(row)
+                    table.removeRow(row)
+                    if not pending:
+                        dialog.reject()
+
+            delete_btn = QPushButton("Удалить")
+            delete_btn.setStyleSheet("background-color: #F44336; color: white; padding: 10px;")
+            delete_btn.clicked.connect(delete_selected)
+            btn_layout.addWidget(delete_btn)
+
             cancel_btn = QPushButton("Отмена")
             cancel_btn.clicked.connect(dialog.reject)
             btn_layout.addWidget(cancel_btn)
-            
+
             layout.addLayout(btn_layout)
-            
+
             if dialog.exec() == QDialog.Accepted:
                 row = table.currentRow()
                 if row >= 0:
@@ -918,12 +1031,9 @@ class MainWindow(QMainWindow):
             self.manual_input_label.show()
             self.stable_indicator.hide()
             
-            # Показываем кнопки калькулятора
-            # Кнопок больше нет
-            
-            # Скрываем кнопки фиксации (в ручном они не нужны)
-            self.btn_tara.hide()
-            self.btn_brutto.hide()
+            # Кнопки фиксации доступны и в ручном режиме
+            self.btn_tara.show()
+            self.btn_brutto.show()
 
             
             # Убираем суффикс и делаем доступным

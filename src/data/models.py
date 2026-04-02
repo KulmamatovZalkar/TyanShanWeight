@@ -18,6 +18,8 @@ class Weighing:
     netto: float = 0.0
     fio: str = ""
     fraction: str = ""
+    counterparty_id: str = ""
+    counterparty_name: str = ""
     notes: str = ""
     sent: bool = False
     api_response: str = ""
@@ -41,7 +43,7 @@ class Weighing:
     
     def to_dict(self) -> dict:
         """Преобразовать в словарь для API."""
-        return {
+        data = {
             'id': self.id,
             'datetime': self.datetime,
             'car_number': self.car_number,
@@ -50,8 +52,11 @@ class Weighing:
             'netto': self.netto,
             'fio': self.fio,
             'fraction': self.fraction,
-            'notes': self.notes
+            'notes': self.notes,
         }
+        if self.counterparty_id:
+            data['counterparty_id'] = self.counterparty_id
+        return data
     
     def __str__(self) -> str:
         return (

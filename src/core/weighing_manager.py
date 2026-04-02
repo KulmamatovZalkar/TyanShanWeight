@@ -52,6 +52,7 @@ class WeighingManager(QObject):
     state_changed = Signal(object)  # WeighingState
     connection_status = Signal(bool)
     error = Signal(str)
+    lookups_loaded = Signal(dict)  # справочники с сервера
     
     def __init__(self, config_manager: ConfigManager):
         """
@@ -113,6 +114,15 @@ class WeighingManager(QObject):
         logger.info("Запуск менеджера взвешивания")
         self.scale_reader.start()
         self.api_client.start()
+        # Загружаем справочники в фоне
+        import threading
+        threading.Thread(target=self._load_lookups, daemon=True).start()
+
+    def _load_lookups(self) -> None:
+        """Загрузить справочники с сервера (фоновый поток)."""
+        data = self.api_client.fetch_lookups()
+        if data:
+            self.lookups_loaded.emit(data)
     
     def stop(self) -> None:
         """Остановить менеджер."""
@@ -296,7 +306,7 @@ class WeighingManager(QObject):
                 self._state = WeighingState.READY_TO_SAVE
                 self.state_changed.emit(self._state)
     
-    def save_weighing(self, car_number: str, fio: str, fraction: str, notes: str = "") -> bool:
+    def save_weighing(self, car_number: str, fio: str, fraction: str, notes: str = "", counterparty_id: str = "", counterparty_name: str = "") -> bool:
         """
         Сохранить взвешивание.
         
@@ -318,6 +328,8 @@ class WeighingManager(QObject):
         self._current_weighing.fio = fio
         self._current_weighing.fraction = fraction
         self._current_weighing.notes = notes
+        self._current_weighing.counterparty_id = counterparty_id
+        self._current_weighing.counterparty_name = counterparty_name
         
         # Проверяем возможность сохранения
         # Можно сохранить если:

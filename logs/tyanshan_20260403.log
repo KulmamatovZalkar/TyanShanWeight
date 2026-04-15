@@ -261,3 +261,7 @@
 2026-04-03 01:03:32 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
 2026-04-03 01:03:32 | INFO     | TyanShanWeight.camera | Сохранено изображение: C:\Weights\images/20260403_010332_Камера4общий.jpg
 2026-04-03 01:03:32 | INFO     | TyanShanWeight.camera | Захвачено 4 изображений
+2026-04-03 10:29:44 | INFO     | TyanShanWeight.main_window | Закрытие приложения
+2026-04-03 10:29:44 | INFO     | TyanShanWeight.weighing_manager | Остановка менеджера взвешивания
+2026-04-03 10:29:44 | INFO     | TyanShanWeight.api_client | API клиент остановлен
+2026-04-03 10:29:44 | INFO     | TyanShanWeight       | Приложение завершено с кодом: 0

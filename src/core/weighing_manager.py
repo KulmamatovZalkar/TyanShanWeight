@@ -69,6 +69,7 @@ class WeighingManager(QObject):
         # Компоненты
         self.database = Database(self.config.db_path)
         self.api_client = ApiClient(self.config.api, self.database)
+        self.api_client.set_factory_id(getattr(self.config, 'factory_id', '') or '')
         self.stabilizer = WeightStabilizer(
             buffer_size=self.config.weight_stable_count,
             threshold=self.config.weight_stable_threshold
@@ -419,6 +420,7 @@ class WeighingManager(QObject):
         
         # Обновляем API клиент
         self.api_client.config = self.config.api
+        self.api_client.set_factory_id(getattr(self.config, 'factory_id', '') or '')
         
         # Обновляем камеры
         self.camera_manager.images_dir = self.config.images_path

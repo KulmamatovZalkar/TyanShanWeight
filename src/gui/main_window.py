@@ -92,7 +92,16 @@ class MainWindow(QMainWindow):
         title = QLabel("TyanShanWeight")
         title.setStyleSheet("font-size: 18px; font-weight: bold; color: #FFFFFF;")
         layout.addWidget(title)
-        
+
+        # Завод
+        factory_name = getattr(self.config_manager.config, 'factory_name', '') or ''
+        self.factory_label = QLabel(f"🏭 {factory_name}" if factory_name else "🏭 завод не выбран")
+        self.factory_label.setStyleSheet(
+            "font-size: 13px; color: #FFA500; font-weight: bold; padding: 4px 10px; "
+            "background-color: #1A1A1A; border-radius: 4px; margin-left: 12px;"
+        )
+        layout.addWidget(self.factory_label)
+
         layout.addStretch()
         
         # Кнопка Журнал (База)
@@ -634,6 +643,12 @@ class MainWindow(QMainWindow):
             self.fraction_combo.clear()
             self.fraction_combo.addItems(self.config_manager.config.fractions)
             self._update_camera_list()
+            # Обновляем метку завода в шапке
+            factory_name = getattr(self.config_manager.config, 'factory_name', '') or ''
+            if hasattr(self, 'factory_label'):
+                self.factory_label.setText(
+                    f"🏭 {factory_name}" if factory_name else "🏭 завод не выбран"
+                )
             
         # Восстанавливаем камеру
         if self.camera_selector.count() > 0:

@@ -37,6 +37,8 @@ class AppConfig:
     """Главная конфигурация приложения."""
     serial: SerialConfig = field(default_factory=SerialConfig)
     api: ApiConfig = field(default_factory=ApiConfig)
+    factory_id: str = ""  # UUID завода в AccountingDRF
+    factory_name: str = ""  # Название завода (для UI)
     fractions: List[str] = field(default_factory=lambda: [
         "Щебень 5-20",
         "Щебень 20-40",
@@ -90,6 +92,8 @@ class ConfigManager:
                 config = AppConfig(
                     serial=SerialConfig(**data.get('serial', {})),
                     api=ApiConfig(**data.get('api', {})),
+                    factory_id=data.get('factory_id', ''),
+                    factory_name=data.get('factory_name', ''),
                     fractions=data.get('fractions', AppConfig().fractions),
                     cameras=data.get('cameras', AppConfig().cameras),
                     weight_stable_count=data.get('weight_stable_count', 5),
@@ -129,6 +133,8 @@ class ConfigManager:
             data = {
                 'serial': asdict(self.config.serial),
                 'api': asdict(self.config.api),
+                'factory_id': self.config.factory_id,
+                'factory_name': self.config.factory_name,
                 'fractions': self.config.fractions,
                 'cameras': self.config.cameras,
                 'weight_stable_count': self.config.weight_stable_count,

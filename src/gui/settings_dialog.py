@@ -165,8 +165,32 @@ class SettingsDialog(QDialog):
         self.api_delay_spin.setRange(1, 60)
         self.api_delay_spin.setSuffix(" сек")
         api_layout.addRow("Задержка между попытками:", self.api_delay_spin)
-        
+
         layout.addWidget(api_group)
+
+        # Завод
+        from PySide6.QtWidgets import QComboBox
+        factory_group = QGroupBox("Завод")
+        factory_layout = QFormLayout(factory_group)
+
+        self.factory_combo = QComboBox()
+        self.factory_combo.setEditable(False)
+        self.factory_combo.addItem("— Не выбран —", "")
+        factory_layout.addRow("Завод терминала:", self.factory_combo)
+
+        load_factories_btn = QPushButton("🔄 Загрузить заводы с сервера")
+        load_factories_btn.clicked.connect(self._on_load_factories_clicked)
+        factory_layout.addRow("", load_factories_btn)
+
+        info_factory = QLabel(
+            "Выберите завод, на котором установлен этот терминал.\n"
+            "Все взвешивания будут привязаны к этому заводу при отправке на сервер."
+        )
+        info_factory.setWordWrap(True)
+        info_factory.setStyleSheet("color: #888; font-size: 11px;")
+        factory_layout.addRow("", info_factory)
+
+        layout.addWidget(factory_group)
         
         # Информация о формате
         info_group = QGroupBox("Формат данных")
@@ -610,6 +634,16 @@ class SettingsDialog(QDialog):
         self.api_timeout_spin.setValue(config.api.timeout)
         self.api_retry_spin.setValue(config.api.retry_count)
         self.api_delay_spin.setValue(config.api.retry_delay)
+
+        # Завод (если уже есть в конфиге — добавляем как первый пункт)
+        factory_id = getattr(config, 'factory_id', '') or ''
+        factory_name = getattr(config, 'factory_name', '') or ''
+        if factory_id and self.factory_combo.findData(factory_id) < 0:
+            self.factory_combo.addItem(factory_name or factory_id, factory_id)
+        if factory_id:
+            idx = self.factory_combo.findData(factory_id)
+            if idx >= 0:
+                self.factory_combo.setCurrentIndex(idx)
         
         # Фракции
         self.fractions_list.clear()
@@ -640,8 +674,10 @@ class SettingsDialog(QDialog):
         self.config.api.timeout = self.api_timeout_spin.value()
         self.config.api.retry_count = self.api_retry_spin.value()
         self.config.api.retry_delay = self.api_delay_spin.value()
-        
-        self.config.api.retry_delay = self.api_delay_spin.value()
+
+        # Завод
+        self.config.factory_id = self.factory_combo.currentData() or ""
+        self.config.factory_name = self.factory_combo.currentText() if self.config.factory_id else ""
         
         self.config.fractions = [
             self.fractions_list.item(i).text() 
@@ -658,6 +694,54 @@ class SettingsDialog(QDialog):
         
         # Сохраняем
         self.config_manager.save(self.config)
-        
+
         logger.info("Настройки сохранены")
         self.accept()
+
+    def _on_load_factories_clicked(self) -> None:
+        """Загрузить список заводов с сервера и заполнить combobox."""
+        import requests
+        from PySide6.QtWidgets import QMessageBox
+
+        url = self.api_url_edit.text().strip()
+        if not url:
+            QMessageBox.warning(self, "Ошибка", "Сначала заполните URL API")
+            return
+
+        # URL lookup = webhook URL + "lookup/?type=factories"
+        base_url = url.rstrip('/')
+        lookup_url = base_url + '/lookup/?type=factories'
+
+        try:
+            response = requests.get(lookup_url, timeout=10)
+            if not response.ok:
+                QMessageBox.critical(
+                    self, "Ошибка",
+                    f"Сервер вернул HTTP {response.status_code}"
+                )
+                return
+            data = response.json()
+            if not isinstance(data, list):
+                QMessageBox.critical(self, "Ошибка", "Неверный формат ответа сервера")
+                return
+
+            # Сохраняем текущий выбор
+            current_id = self.factory_combo.currentData() or ""
+
+            self.factory_combo.clear()
+            self.factory_combo.addItem("— Не выбран —", "")
+            for f in data:
+                self.factory_combo.addItem(f.get('title', ''), f.get('id', ''))
+
+            # Восстанавливаем выбор
+            if current_id:
+                idx = self.factory_combo.findData(current_id)
+                if idx >= 0:
+                    self.factory_combo.setCurrentIndex(idx)
+
+            QMessageBox.information(
+                self, "Готово",
+                f"Загружено заводов: {len(data)}"
+            )
+        except Exception as e:
+            QMessageBox.critical(self, "Ошибка", f"Не удалось загрузить заводы:\n{e}")

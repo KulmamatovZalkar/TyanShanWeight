@@ -26,17 +26,22 @@ class ApiClient:
     def __init__(self, config: ApiConfig, database: Database):
         """
         Инициализация API клиента.
-        
+
         Args:
             config: Настройки API
             database: Экземпляр базы данных
         """
         self.config = config
         self.database = database
+        self.factory_id: str = ""  # Устанавливается из AppConfig в WeighingManager
         self._send_queue: Queue = Queue()
         self._running = False
         self._worker_thread: Optional[threading.Thread] = None
         self._on_send_callback: Optional[Callable[[int, bool, str], None]] = None
+
+    def set_factory_id(self, factory_id: str) -> None:
+        """Установить ID завода — будет передаваться в каждом payload."""
+        self.factory_id = factory_id or ""
     
     def set_callback(self, callback: Callable[[int, bool, str], None]) -> None:
         """
@@ -138,7 +143,11 @@ class ApiClient:
         
         # Подготовка данных с фото
         data = weighing.to_dict()
-        
+
+        # Привязка к заводу
+        if self.factory_id:
+            data['factory_id'] = self.factory_id
+
         # Кодируем фото
         if weighing.photos_tara:
             data['photos_tara_base64'] = [
